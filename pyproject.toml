@@ -1,0 +1,29 @@
+[project]
+name = "apprentissage-semi-supervise"
+version = "0.1.0"
+description = "Mise en place d'un apprentissage semi-supervisee pour diagnostiquer des images medicales"
+authors = [
+    {name = "Florian Schorer",email = "schorer.florian@me.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "numpy (>=2.3.4,<3.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "notebook (>=7.4.7,<8.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "pip (>=25.3,<26.0)",
+    "pillow (>=12.0.0,<13.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "plotly (>=6.4.0,<7.0.0)",
+    "torch (>=2.9.0,<3.0.0)",
+    "torchvision (>=0.24.0,<0.25.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
