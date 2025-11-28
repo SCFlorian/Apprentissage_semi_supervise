@@ -21,11 +21,15 @@ Nous avons à disposition plusieurs dossiers :
 ```
 ├── Data
 │   ├── Raw/          # Données brutes mais pas affiché sur GitHub car trop volumineux
-│   └── Processed/    # Données nettoyées et préparées
+│   └── Processed/    # Données nettoyées et préparées mais pas totalement affichées car trop volumineux
 │
 ├── notebooks/        # Étapes du projet sous forme de notebooks
 │   ├── notebook_1_analyse_exploratoire.ipynb
-│   ├── notebook_2_pretraitement_donnees.ipynb
+│   ├── notebook_2_pretraitement_donnees_resnet18.ipynb
+│   ├── notebook_2_pretraitement_donnees_resnet50.ipynb
+│   ├── notebook_3_analyse_non_supervisee_resnet18.ipynb
+│   ├── notebook_3_analyse_non_supervisee_resnet50.ipynb
+│   ├── notebook_4_modelisation_semi_supervisee.ipynb
 │
 ├── README.md         # Documentation du projet
 └── pyproject.toml    # Dépendances et configuration
@@ -61,3 +65,10 @@ notebooks/
 - Ouvrez n’importe quel fichier .ipynb (ex. notebook_1_analyse_exploratoire.ipynb).
 - VS Code activera automatiquement l’éditeur interactif Jupyter.
 - Vous pouvez exécuter les cellules avec Shift+Enter.
+
+### Les réalisations
+1. Visualisation des images médicales.
+2. Extraction des caractéristiques avec ResNet18 et ResNet50.
+3. Réduction des dimensions et visualisations avec PCA & t-SNE.
+4. Clustering réalisé avec k-means & DBSCAN.
+5. Apprentissage semi-supervisé vs Apprentissage supervisé
